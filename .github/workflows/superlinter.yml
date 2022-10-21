@@ -9,7 +9,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      - name: Super-Linter
+        uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_PYTHON_BLACK: true
+          VALIDATE_HTML: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          

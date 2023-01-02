@@ -1,6 +1,6 @@
 def hello():
    print("hi")
-   print("new")
-   print("=======")
+   print("new1")
+   print("|=======|")
   
 print(hello())
